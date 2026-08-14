@@ -1160,6 +1160,30 @@ nav a {
   }
 }
 
+/* Tablet range: keep the full nav visible (no hamburger yet),
+   but let it wrap and push the search box onto its own row
+   instead of overflowing past the right edge of the screen. */
+@media (min-width: 701px) and (max-width: 1100px) {
+  header {
+    flex-wrap: wrap;
+  }
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    width: 100%;
+  }
+
+  .site-search {
+    flex-basis: 100%;
+    justify-content: center;
+    margin-left: 0;
+    margin-top: 10px;
+  }
+}
+
+
 /*event card - events*/
 
 .event-card {
@@ -1293,65 +1317,6 @@ nav a {
   .event-actions {
     display: none;
   }
-}
-
-/* Floating "Buy Tickets" button + popup */
-.ticket-float-btn {
-  position: fixed;
-  bottom: 24px;
-  right: 24px;
-  z-index: 900;
-  background: #ff6f47;
-  color: #fff;
-  border: none;
-  border-radius: 50px;
-  padding: 14px 22px;
-  font-size: 15px;
-  font-weight: bold;
-  cursor: pointer;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
-}
-
-.ticket-float-btn:hover {
-  background: #e85a34;
-}
-
-.ticket-popup-box {
-  max-width: 420px;
-  width: 90%;
-  text-align: left;
-  max-height: 80vh;
-  overflow-y: auto;
-}
-
-.ticket-event-list {
-  list-style: none;
-  padding: 0;
-  margin: 16px 0;
-}
-
-.ticket-event-list li {
-  padding: 10px 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
-}
-
-.ticket-event-list .ticket-event-title {
-  display: block;
-  font-weight: bold;
-}
-
-.ticket-event-list .ticket-event-date {
-  display: block;
-  font-size: 13px;
-  color: #b8c8dc;
-}
-
-.ticket-view-all {
-  display: inline-block;
-  margin-top: 8px;
-  color: #ff6f47;
-  font-weight: bold;
-  text-decoration: none;
 }
 
 /* Event past/upcoming filter dropdown */
