@@ -102,13 +102,13 @@ aquarium-world/
 Clone the repository:
 
 ```bash
-git clone https://github.com/mirellashortfreitas/aquarium-word.git
+git clone https://github.com/mirellashortfreitas/Aquarium-word.git
 ```
 
 Navigate to the project directory:
 
 ```bash
-cd aquarium-world
+cd Aquarium-word
 ```
 
 Install the required dependencies:
@@ -127,15 +127,15 @@ No environment variables are required to run this project locally. The SQLite da
 
 Start the server:
 
-\```bash
+```bash
 node index.mjs
-\```
+```
 
 Or, using the npm script:
 
-\```bash
+```bash
 npm start
-\```
+```
 
 Or run in development mode with auto-reload (via nodemon):
 
