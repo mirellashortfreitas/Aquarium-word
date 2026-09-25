@@ -375,19 +375,40 @@ button {
   position: fixed;
   bottom: 30px;
   right: 30px;
-  background: #006699;
+  left: auto;
+  background: #f07d03;
   color: white;
-  padding: 12px 16px;
-  border-radius: 50%;
+  width: auto;
+  min-width: 70px;
+  height: auto;
+  padding: 10px 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  border-radius: 12px;
   text-decoration: none;
-  font-size: 20px;
+  border: none;
+  cursor: pointer;
   box-shadow: 0 2px 6px rgba(0,0,0,0.3);
   z-index: 100;
   transition: background 0.3s;
 }
 
+.back-to-top-text {
+  font-size: 12px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.back-to-top-arrow {
+  font-size: 22px;
+  line-height: 1;
+}
+
 .back-to-top:hover {
-  background: #004d73;
+  background: #0bed29;
 }
 
 /* faz a rolagem até o topo ser suave em vez de instantânea */

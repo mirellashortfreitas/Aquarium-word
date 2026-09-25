@@ -473,3 +473,19 @@ window.addEventListener("afterprint", () => {
   document.querySelectorAll(".print-only").forEach(el => el.classList.remove("print-only"));
 });
 
+/* Back to top button */
+
+const goUpBtn = document.getElementById('go-up-btn')
+
+if (goUpBtn) {
+  goUpBtn.style.display = 'none'
+
+  window.addEventListener('scroll', () => {
+    goUpBtn.style.display = window.scrollY > 300 ? 'flex' : 'none'
+  })
+
+  goUpBtn.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+  })
+}
+
